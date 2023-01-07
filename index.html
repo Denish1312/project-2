@@ -104,7 +104,7 @@
         </div>
 
         <!-- second menu end -->
-        <div class="grid1 flex w-[53%] m-auto flex-wrap">
+        <div class="grid1 flex w-full m-auto flex-wrap justify-center">
             <!-- first block start -->
             <div class="first-block">
                 <div class="fbr-1 flex mb-1 w-full">
@@ -164,7 +164,7 @@
 
 
         <!-- footer start here -->
-        <div class="footer mt-12 mb-4 flex justify-around flex-wrap">
+        <div class="footer mt-12 mb-4 flex justify-around flex-wrap items-center">
             <div class="left-footer">
                 <div class="link">
                     <p><a href="#" class="underline">Discover All</a></p>
@@ -174,15 +174,15 @@
 
                     <div class="relative">
 
-                        <img class="absolute top-[-3rem] left-[6rem] rounded-lg border-2 border-white" src="https://picsum.photos/536/354" alt="Workplace" width="60" />
-                        <img class="cursor-pointer absolute top-[-3rem] left-[6.5rem] border-2 border-white rounded-lg ml-4 hover:shadow-outline" src="https://picsum.photos/535/354" width="60" />
-                        <img class="cursor-pointer absolute top-[-3rem] left-[7rem] border-2 border-white rounded-lg ml-8 hover:shadow-outline" src="https://picsum.photos/534/354" width="60" />
-                        <img class="cursor-pointer absolute top-[-3rem] left-[7.5rem]  border-2 border-white rounded-lg ml-12 hover:shadow-outline" src="https://picsum.photos/533/354" width="60" />
+                        <img class="absolute w-10 h-12 top-[-3rem] left-[6rem] rounded-lg border-2 border-white" src="https://picsum.photos/536/354" alt="Workplace" />
+                        <img class="cursor-pointer w-10 h-12 absolute top-[-3rem] left-[6.5rem] border-2 border-white rounded-lg ml-4 hover:shadow-outline" src="https://picsum.photos/535/354"  />
+                        <img class="cursor-pointer w-10 h-12 absolute top-[-3rem] left-[7rem] border-2 border-white rounded-lg ml-8 hover:shadow-outline" src="https://picsum.photos/534/354" />
+                        <img class="cursor-pointer w-10 h-12 absolute top-[-3rem] left-[7.5rem]  border-2 border-white rounded-lg ml-12 hover:shadow-outline" src="https://picsum.photos/533/354" />
                       
                       </div>
                 </div>
             </div>
-            <div class="center-footer mb-4 text-center">
+            <div class="center-footer text-center">
                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                     Next Page <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -190,16 +190,27 @@
                       </span>
                   </button>
             </div>
-            <div class="right-footer text-center">
-                <p>page 
-                    <span>  <a href="#" class="px-3 py-2 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Prev</a>
-                 </span>
-                 <span>
-                    <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
-    
-                 </span>
-                <span> <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">next</a>
-                </span>
+            <div class="right-footer text-center flex items-center">
+                <p>Page 
+                  <ul class="inline-flex items-center space-x-1">
+                    <li>
+                      <a href="#" class="block px-2 py-1 ml-0 leading-tight text-gray-500 bg-grey-100 border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700">
+                        <span class="sr-only">Previous</span>
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                      </a>
+                    </li>
+                   
+                    <li>
+                      <a href="#" aria-current="page" class="z-10 px-2 py-1 leading-tight text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 ">1</a>
+                    </li>
+                    
+                    <li>
+                      <a href="#" class="block px-2 py-1 leading-tight  bg-gray-100 border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 text-black">
+                        <span class="sr-only">Next</span>
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                      </a>
+                    </li>
+                  </ul>
                 of 120
             </p>
             </div>
